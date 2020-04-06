@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_movie_night" translatesAutoresizingMaskIntoConstraints="NO" id="t2p-ZW-Aj8">
+                                <rect key="frame" x="37" y="198" width="340" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="294" id="KXq-tL-FHP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc5-eW-3ez">
+                                <rect key="frame" x="131.5" y="477" width="151" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="e1S-hw-ltP"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Movie ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.42352941176470588" green="0.38823529411764707" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="27" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Time!">
+                                        <attributes>
+                                            <font key="NSFont" size="27" name="Futura-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by The Movie DB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5l9-Bc-JUg">
+                                <rect key="frame" x="94" y="757" width="226" height="25"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oc5-eW-3ez" firstAttribute="centerX" secondItem="5l9-Bc-JUg" secondAttribute="centerX" id="ChX-OL-i7P"/>
+                            <constraint firstItem="t2p-ZW-Aj8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Hzq-gb-jQA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5l9-Bc-JUg" secondAttribute="bottom" constant="80" id="Iye-7P-r0f"/>
+                            <constraint firstItem="oc5-eW-3ez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="433" id="Unw-eQ-iSi"/>
+                            <constraint firstItem="oc5-eW-3ez" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aEE-mo-kPj"/>
+                            <constraint firstItem="t2p-ZW-Aj8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="cFf-J0-lST"/>
+                            <constraint firstItem="oc5-eW-3ez" firstAttribute="centerX" secondItem="t2p-ZW-Aj8" secondAttribute="centerX" id="i5I-Fy-T3m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="undraw_movie_night" width="1107" height="660"/>
+    </resources>
+</document>
