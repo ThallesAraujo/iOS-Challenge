@@ -1,19 +1,28 @@
-# Code Challenge iOS
+# Code Challenge iOS (Movie Time)
 
-## O desafio:
-Utilizando a API do [TheMovieDB](https://developers.themoviedb.org/3/getting-started/introduction), Criar um app que mostre os filmes que estão em cartaz nos cinemas, em forma de lista.
+![alt text](./screenshots/logo.png "Logo")
 
-Ao tocar em um filme, mostrar em uma nova tela, informações detalhadas sobre ele, você pode escolher quais informações acha interessante mostrar.
+Aplicação iOS de catálogo de filmes com uso da TheMovieDB API
 
-## Extras:
+## Screenshots
 
-- Na tela de listagem dos filmes, ir carregando as próximas páginas ao dar scroll até o final da página atual
-- Na tela de detalhe, criar uma opçāo para tocar o vídeo do trailer do filme.
-- Na tela inicial, possibilitar a busca por título do filme
+### Lista de filmes (tela principal)
 
+![alt text](./screenshots/movielist-light.png "main-light") 
+![alt text](./screenshots/movielist-dark.png "main-dark")
 
-No final, um pull request deve ser criado no repositório do Github. Assim que terminar, por favor nos avise.
+### Detalhes do filme
 
-Estamos à disposição, para tirar dúvidas.
+![alt text](./screenshots/moviedetails-light.png "main-light") 
+![alt text](./screenshots/moviedetails-dark.png "main-dark")
 
-Happy coding! 🤓
+## Implementação
+
+- Swift 5/XCode 11
+- CocoaPods para gerenciamento de dependências
+- Alamofire (requisições REST)
+- Kingfisher (Download de imagens)
+- ObjectMapper (mapeamento de JSON para objetos Swift)
+
+## Design Patterns
+- Coordinator
